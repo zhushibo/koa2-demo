@@ -1,0 +1,33 @@
+{
+  "name": "koa2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "cross-env NODE_ENV=dev ./node_modules/.bin/nodemon bin/www",
+    "prd": "cross-env NODE_ENV=prodution pm2 start bin/www"
+  },
+  "author": "doctor",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-generic-session": "^2.0.1",
+    "koa-logger": "^3.2.0",
+    "koa-morgan": "^1.0.1",
+    "koa-onerror": "^4.1.0",
+    "koa-redis": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "mysql": "^2.17.1",
+    "redis": "^2.8.0",
+    "xss": "^1.0.6"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.19.1"
+  }
+}
